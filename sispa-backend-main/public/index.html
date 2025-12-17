@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>SISPA – Gestión de Aprendices</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px 0;
+      width: 100%;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #007bff;
+      color: white;
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>SISPA – Aprendices SENA</h1>
+
+    <h3>Registrar Aprendiz</h3>
+
+    <input type="text" id="nombre" placeholder="Nombre del aprendiz" />
+    <input type="number" id="programa_id" placeholder="Programa ID" />
+    <input type="number" id="instructor_id" placeholder="Instructor ID" />
+
+    <button id="guardarBtn">Guardar Aprendiz</button>
+    <button id="recargarBtn">Recargar Datos</button>
+
+    <div id="mensaje" class="error"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Programa</th>
+          <th>Instructor</th>
+        </tr>
+      </thead>
+      <tbody id="tablaAprendices">
+        <tr>
+          <td colspan="4">Cargando...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
