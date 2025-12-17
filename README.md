@@ -28,7 +28,7 @@ MongoDB
 Git
 
 📥 Clonar el repositorio
-git clone https://github.com/sebastian12-def/sispa-backend.git
+git clone https://github.com/lauraSofia123/backend_sispa.git
 cd sispa-backend
 
 📦 Instalar dependencias
